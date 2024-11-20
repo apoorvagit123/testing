@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/jai613/newRepo.git'
+                git branch: 'main', url: 'https://github.com/apoorvagit123/testing.git'
             }
         }
         stage('Install Dependencies') {
             steps {
-                bat 'pip install -r requirements.txt'
+                bat 'pip install pytest'
             }
         }
         stage('Run Tests') {
